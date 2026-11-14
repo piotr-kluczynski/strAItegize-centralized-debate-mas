@@ -18,7 +18,8 @@ class CentralizedDebateMAS(MultiAgentSystem):
         # Graphs
         self.graph = get_centralized_debate_mas(
             communication=communication, 
-            representative_agent_model=kwargs.get('representative_model')
+            representative_agent_model=kwargs.get('representative_model'),
+            agent_num=kwargs.get('agent_num')
         )
         
     def initialize_graph(self,
